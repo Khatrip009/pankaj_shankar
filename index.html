@@ -34,8 +34,8 @@
             overflow-x: hidden;
         }
 
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-        section { padding: 100px 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 12px; }
+        section { padding: 0px 0; }
         
         .label {
             color: var(--gold);
@@ -198,25 +198,6 @@
             text-transform: uppercase;
         }
 
-        .floating-quote {
-            position: absolute;
-            bottom: -30px;
-            left: -30px;
-            background: rgba(13, 38, 36, 0.9);
-            backdrop-filter: blur(20px);
-            padding: 24px;
-            border-radius: 20px;
-            border: 1px solid var(--border);
-            max-width: 280px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-
-        .floating-quote p {
-            font-style: italic;
-            font-family: 'Playfair Display', serif;
-            font-size: 1rem;
-            color: var(--gold-light);
-        }
 
         /* Founder's Desk Section */
         .message-section {
@@ -243,52 +224,8 @@
 
         .message-text p { margin-bottom: 1.5rem; }
 
-        /* Timeline */
-        .timeline-container { position: relative; margin-top: 50px; }
-        .timeline-line {
-            position: absolute; left: 50%; top: 0; bottom: 0; width: 1px;
-            background: linear-gradient(transparent, var(--gold), transparent);
-            transform: translateX(-50%);
-        }
 
-        .timeline-item {
-            display: grid; grid-template-columns: 1fr 1fr; gap: 80px;
-            margin-bottom: 80px; position: relative;
-        }
-
-        .timeline-dot {
-            position: absolute; left: 50%; top: 10px; width: 12px; height: 12px;
-            background: var(--gold); border-radius: 50%;
-            transform: translateX(-50%); box-shadow: 0 0 15px var(--gold);
-        }
-
-        .timeline-content {
-            background: var(--glass); padding: 30px; border-radius: 24px;
-            border: 1px solid var(--border);
-        }
-
-        .timeline-item:nth-child(even) .timeline-content { grid-column: 2; }
-        .timeline-item:nth-child(odd) .timeline-content { text-align: right; grid-column: 1; }
-
-        .timeline-year { color: var(--gold); font-weight: 600; font-size: 0.9rem; margin-bottom: 8px; display: block; }
-        .timeline-content ul { list-style: none; margin-top: 15px; font-size: 0.9rem; color: var(--text-muted); }
-
-        /* Skills Matrix */
-        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-        .skill-card {
-            background: var(--glass); border: 1px solid var(--border);
-            padding: 40px; border-radius: 32px; transition: 0.3s ease;
-        }
-        .skill-card:hover { border-color: var(--gold); background: rgba(255, 255, 255, 0.05); }
-
-        .skill-group h3 { font-family: 'Playfair Display', serif; margin-bottom: 25px; font-size: 1.5rem; }
-        .skill-info { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.9rem; }
-        .skill-bar { height: 6px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; }
-        .skill-progress {
-            height: 100%; background: linear-gradient(90deg, var(--primary), var(--gold));
-            border-radius: 10px; width: 0; transition: width 1.5s cubic-bezier(0.1, 0.5, 0.5, 1);
-        }
-
+        
         /* Dossier & Contact */
         .dossier-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
         .contact-card {
@@ -362,9 +299,7 @@
                 <span class="highlighted-name">Pankaj<br>Shankar</span>
                 <span class="highlighted-subtitle">Executive Portfolio</span>
             </div>
-            <div class="floating-quote">
-                <p>“Global trade is not just about moving goods; it's about sustaining trust across borders.”</p>
-            </div>
+            
         </div>
     </div>
 </section>
@@ -380,72 +315,6 @@
                     <p>In today's fast-paced economy, we distinguish ourselves not just by the volume of trade, but by the value we create for every stakeholder. From the farmers in our supply network to the industrial partners in distant markets, our priority remains consistent—long-term partnership over short-term gain.</p>
                     <p>We are constantly evolving, adopting new digital monitoring systems and sustainable practices to ensure that Sprada2 remains a synonym for reliability. Thank you for being a part of our global story.</p>
                     <p style="font-family: 'Playfair Display', serif; color: var(--gold); font-style: italic;">— Pankaj Shankar</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="journey">
-    <div class="container">
-        <span class="label" style="text-align: center;">Chronological Trajectory</span>
-        <div class="timeline-container">
-            <div class="timeline-line"></div>
-            
-            <div class="timeline-item" data-aos="fade-right">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-year">2019 — Present</span>
-                    <h3>Co-Founder | Sprada2 Global Exim</h3>
-                    <p>Spearheading the strategic expansion of the export-import portfolio into the European and North American markets.</p>
-                    <ul>
-                        <li>• Negotiated multi-million dollar contracts with tier-1 international distributors.</li>
-                        <li>• Implemented ISO-grade quality control protocols across the sourcing chain.</li>
-                        <li>• Managed a diverse portfolio spanning Agro-commodities and Industrial raw materials.</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="timeline-item" data-aos="fade-left">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <span class="timeline-year">2014 — 2019</span>
-                    <h3>Trade Operations Lead | Global Logistics Corp</h3>
-                    <p>Directed logistics and custom clearance operations for high-frequency trade corridors.</p>
-                    <ul>
-                        <li>• Optimized shipping routes reducing transit times by 15% across SE Asian routes.</li>
-                        <li>• Expertise in duty drawback schemes and Free Trade Agreement (FTA) utilization.</li>
-                        <li>• Built a network of over 200+ reliable vendors across the Indian subcontinent.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="skills">
-    <div class="container">
-        <span class="label">Capability Matrix</span>
-        <div class="skills-grid">
-            <div class="skill-card" data-aos="fade-up">
-                <div class="skill-group">
-                    <h3>Strategic Oversight</h3>
-                    <div class="skill-info"><span>Global Compliance</span><span>95%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-width="95%"></div></div>
-                </div>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="skill-group">
-                    <h3>Trade Execution</h3>
-                    <div class="skill-info"><span>Export Logistics</span><span>98%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-width="98%"></div></div>
-                </div>
-            </div>
-            <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="skill-group">
-                    <h3>Core Philosophy</h3>
-                    <div class="skill-info"><span>Operational Ethics</span><span>100%</span></div>
-                    <div class="skill-bar"><div class="skill-progress" data-width="100%"></div></div>
                 </div>
             </div>
         </div>
